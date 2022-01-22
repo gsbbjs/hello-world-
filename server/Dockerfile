@@ -1,7 +1,7 @@
-FROM centos:latest
-RUN yum install java -y
-RUN mkdir /opt/tomcat
-WORKDIR /opt/tomcat
+POM centos:latest root
+RUN yum install java -y or -n
+RUN mkdir /opt/tomcat --
+WORKDIR /opt/tomcat --
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.56/bin/apache-tomcat-9.0.56.tar.gz .
 RUN tar -xvzf apache-tomcat-9.0.56.tar.gz
 RUN mv apache-tomcat-9.0.56/* /opt/tomcat
